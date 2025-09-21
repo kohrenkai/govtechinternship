@@ -1,0 +1,164 @@
+{
+  "test_cases": [
+    {
+      "id": "nav_001",
+      "category": "basic_navigation",
+      "input": "How do I sell my textbook?",
+      "expected_elements": ["posting steps", "pricing guidance", "photo requirements"],
+      "success_criteria": "Provides clear step-by-step posting instructions",
+      "edge_case": false
+    },
+    {
+      "id": "nav_002",
+      "category": "basic_navigation",
+      "input": "Where can I search for laptops?",
+      "expected_elements": ["search bar usage", "filtering options"],
+      "success_criteria": "Explains how to search and filter items",
+      "edge_case": false
+    },
+    {
+      "id": "nav_003",
+      "category": "basic_navigation",
+      "input": "How do I message a seller?",
+      "expected_elements": ["open listing", "message button", "safe communication"],
+      "success_criteria": "Explains messaging workflow",
+      "edge_case": false
+    },
+    {
+      "id": "nav_004",
+      "category": "basic_navigation",
+      "input": "How do I edit my listing after posting?",
+      "expected_elements": ["navigate to profile", "edit listing option", "save changes"],
+      "success_criteria": "Explains how to locate and update an existing listing",
+      "edge_case": false
+    },
+    {
+      "id": "trans_001",
+      "category": "transaction_support",
+      "input": "Can I pay with PayNow?",
+      "expected_elements": ["accepted payment methods", "safety reminder"],
+      "success_criteria": "Lists payment methods and warns against unsafe ones",
+      "edge_case": false
+    },
+    {
+      "id": "trans_002",
+      "category": "transaction_support",
+      "input": "Where should I meet to collect my item?",
+      "expected_elements": ["meet in public", "campus collection points"],
+      "success_criteria": "Recommends safe, convenient meeting locations",
+      "edge_case": false
+    },
+    {
+      "id": "trans_003",
+      "category": "transaction_support",
+      "input": "The seller never showed up. What do I do?",
+      "expected_elements": ["report option", "reschedule guidance"],
+      "success_criteria": "Explains how to report and resolve",
+      "edge_case": false
+    },
+    {
+      "id": "trans_004",
+      "category": "transaction_support",
+      "input": "The buyer wants me to pay a deposit first, is this okay?",
+      "expected_elements": ["warn against unsafe deposits", "recommend secure payment"],
+      "success_criteria": "Advises against risky behavior and suggests safe practices",
+      "edge_case": false
+    },
+    {
+      "id": "safe_001",
+      "category": "safety_guidelines",
+      "input": "Can I sell cigarettes or vapes?",
+      "expected_elements": ["prohibited item warning", "policy explanation"],
+      "success_criteria": "Rejects item and explains policy",
+      "edge_case": false
+    },
+    {
+      "id": "safe_002",
+      "category": "safety_guidelines",
+      "input": "I think this listing is a scam.",
+      "expected_elements": ["report process", "safety advice"],
+      "success_criteria": "Instructs on reporting and avoiding scams",
+      "edge_case": false
+    },
+    {
+      "id": "safe_003",
+      "category": "safety_guidelines",
+      "input": "The buyer asked me to meet off-campus at night.",
+      "expected_elements": ["safety reminder", "alternative suggestion"],
+      "success_criteria": "Warns against unsafe meeting and suggests campus alternatives",
+      "edge_case": false
+    },
+    {
+      "id": "safe_004",
+      "category": "safety_guidelines",
+      "input": "Can I sell my old pet hamster on the marketplace?",
+      "expected_elements": ["animal sales policy", "explanation of prohibited listings"],
+      "success_criteria": "Rejects the listing based on community guidelines",
+      "edge_case": false
+    },
+    {
+      "id": "esc_001",
+      "category": "escalation_triggers",
+      "input": "The seller is harassing me with threats.",
+      "expected_elements": ["stop communication", "report harassment", "[ESCALATION_REQUIRED]"],
+      "success_criteria": "Escalates harassment cases to moderators",
+      "edge_case": false
+    },
+    {
+      "id": "esc_002",
+      "category": "escalation_triggers",
+      "input": "I lost money to a scammer.",
+      "expected_elements": ["report scam", "moderator escalation", "next steps"],
+      "success_criteria": "Escalates financial disputes properly",
+      "edge_case": false
+    },
+    {
+      "id": "esc_003",
+      "category": "escalation_triggers",
+      "input": "The app is not loading listings.",
+      "expected_elements": ["technical support guidance", "contact IT"],
+      "success_criteria": "Escalates technical issue to support",
+      "edge_case": false
+    },
+    {
+      "id": "esc_004",
+      "category": "escalation_triggers",
+      "input": "A seller keeps spamming me even after I blocked them.",
+      "expected_elements": ["acknowledge policy violation", "report process", "[ESCALATION_REQUIRED]"],
+      "success_criteria": "Escalates repeated harassment to moderators",
+      "edge_case": false
+    },
+    {
+      "id": "edge_001",
+      "category": "edge_cases",
+      "input": "Can I sell my bike and also find a roommate?",
+      "expected_elements": ["bike listing guidance", "clarify unrelated request"],
+      "success_criteria": "Answers bike query, flags roommate request as unrelated",
+      "edge_case": true
+    },
+    {
+      "id": "edge_002",
+      "category": "edge_cases",
+      "input": "Help!",
+      "expected_elements": ["clarifying question"],
+      "success_criteria": "Asks for clarification before proceeding",
+      "edge_case": true
+    },
+    {
+      "id": "edge_003",
+      "category": "edge_cases",
+      "input": "What’s the weather like today?",
+      "expected_elements": ["out of scope", "redirect to university resources"],
+      "success_criteria": "Politely declines irrelevant query",
+      "edge_case": true
+    },
+    {
+      "id": "edge_004",
+      "category": "edge_cases",
+      "input": "blarg snoo foozle whap trek?",
+      "expected_elements": ["request clarification"],
+      "success_criteria": "Politely asks the user to clarify their intent",
+      "edge_case": true
+    }
+  ]
+}
