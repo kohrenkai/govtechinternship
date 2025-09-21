@@ -36,6 +36,4 @@ This document explains how the chatbot prompt will be updated and maintained as 
 - **Yellow diamond** = Decision point
 - **Red rectangle** = Rollback step.
 
-  ```markdown
-  ![Chatbot Update Workflow](resources/update-workflow.png)
-
+![Chatbot Update Workflow](resources/update-workflow.png)
